@@ -1,10 +1,8 @@
-# url-to-google-drive
-"url-to-google-drive" is a Python script for Google Colab that simplifies downloading files from URLs and saving them to Google Drive.
-
 # Google Drive Downloader
 =======================
 
 A Python script to download files from a given URL and save them to Google Drive.
+"url-to-google-drive" is a Python script for Google Colab that simplifies downloading files from URLs and saving them to Google Drive.
 
 ## Table of Contents
 -----------------
@@ -29,9 +27,7 @@ Use the following code to mount your Google Drive to the Colab notebook:
 
 python
 
-VerifyOpen In EditorEditorEditRunCopy code
-
-`1from google.colab import drive 2drive.mount('/content/drive')`
+`from google.colab import drive 2drive.mount('/content/drive')`
 
 Verify the mount by running `ls "/content/drive/My Drive/"`
 
@@ -39,31 +35,19 @@ Verify the mount by running `ls "/content/drive/My Drive/"`
 
 Specify the file path where you want to save the downloaded file:
 
-python
-
-VerifyOpen In EditorEditorEditRunCopy code
-
 `1data_path = '/content/drive/My Drive/datasets'`
 
 ### Provide URL
 
 Provide the URL of the file you want to download:
 
-python
-
-VerifyOpen In EditorEditorEditRunCopy code
-
-`1url = "https://example.com/file.zip"`
+`url = "https://example.com/file.zip"`
 
 ### Call Function
 
 Call the `save_to_drive` function with the URL and file path:
 
-python
-
-VerifyOpen In EditorEditorEditRunCopy code
-
-`1save_to_drive(url, f"{data_path}/file.zip")`
+`save_to_drive(url, f"{data_path}/file.zip")`
 
 Requirements
 ------------
