@@ -25,29 +25,38 @@ This script is designed to be used in a Google Colab environment. You can simply
 
 Use the following code to mount your Google Drive to the Colab notebook:
 
-python
+```python
+from google.colab import drive 2drive.mount('/content/drive')
+```
 
-`from google.colab import drive 2drive.mount('/content/drive')`
-
-Verify the mount by running `ls "/content/drive/My Drive/"`
+Verify the mount by running 
+```bash 
+ls "/content/drive/My Drive/"
+```
 
 ### Specify File Path
 
 Specify the file path where you want to save the downloaded file:
 
-`1data_path = '/content/drive/My Drive/datasets'`
+```python
+data_path = '/content/drive/My Drive/datasets'
+```
 
 ### Provide URL
 
 Provide the URL of the file you want to download:
 
-`url = "https://example.com/file.zip"`
+```python
+url = "https://example.com/file.zip"
+```
 
 ### Call Function
 
 Call the `save_to_drive` function with the URL and file path:
 
-`save_to_drive(url, f"{data_path}/file.zip")`
+```python
+save_to_drive(url, f"{data_path}/file.zip")
+```
 
 Requirements
 ------------
