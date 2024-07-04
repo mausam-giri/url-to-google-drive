@@ -8,8 +8,6 @@ A Python script to download files from a given URL and save them to Google Drive
 *   [Installation](#installation)
 *   [Usage](#usage)
 *   [Requirements](#requirements)
-*   [Example](#example)
-*   [License](#license)
 
 ## Installation
 This script is designed to be used in a Google Colab environment. You can simply copy and paste the code into a new Colab notebook.
